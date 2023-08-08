@@ -47,3 +47,8 @@ def test_app_vwo_login_valid():
     time.sleep(5)
     log.info('title is ' + driver.title)
     assert "Dashboard" in driver.title
+
+    driver.refresh()
+    driver.back()
+    driver.get("https://sdet.live")
+    driver.forward()
